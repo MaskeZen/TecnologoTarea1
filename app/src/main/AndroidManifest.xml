@@ -15,7 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DisplayMessageActivity"></activity>
+        <activity android:name=".DisplayMessageActivity" />
+        <activity
+            android:name=".InsertarUsuario"
+            android:label="@string/title_activity_insertar_usuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListarUsuarios"
+            android:label="@string/title_activity_listar_usuarios"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
