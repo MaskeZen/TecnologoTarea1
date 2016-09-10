@@ -15,11 +15,10 @@
             android:hint="@string/edit_message"
             />
     <Button
-         android:id="@+id/inicio_enviarTexto"
+         android:id="@+id/bttInsertUsuario"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:text="@string/button_send"
-         android:onClick="sendMessage"
          android:layout_below="@id/edit_message"/>
 
 </RelativeLayout>

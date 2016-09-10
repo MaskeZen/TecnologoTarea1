@@ -8,6 +8,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tisj.tecnologotarea1.ListarUsuariosFragment"
     tools:showIn="@layout/activity_listar_usuarios">
-
+    <ListView
+        android:id="@+id/listaUsuarios"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">    </ListView>
 
 </RelativeLayout>
