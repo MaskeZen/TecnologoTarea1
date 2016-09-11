@@ -56,8 +56,9 @@ public class InsertarUsuarioFragment extends Fragment {
                     // Insert the new row, returning the primary key value of the new row
                     long newRowId = db.insert(UsuarioContract.UsuarioEntry.TABLE_NAME, null, values);
 
-                    Intent intent = new Intent(getActivity(),ListarUsuarios.class);
-                    startActivity(intent);
+                    textview.setText("");
+                    //Intent intent = new Intent(getActivity(),ListarUsuarios.class);
+                    //startActivity(intent);
                 }
             });
         }

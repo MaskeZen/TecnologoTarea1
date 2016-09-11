@@ -33,5 +33,17 @@ public class Inicio extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button bttLmpiarDB = (Button) findViewById(R.id.inicio_limpiarDB);
+        bttLmpiarDB.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                UsuarioDBHelper DBHelper = new UsuarioDBHelper(v.getContext());
+                // Gets the data repository in write mode
+                SQLiteDatabase db = DBHelper.getWritableDatabase();
+
+                DBHelper.limpiarDB(db);
+            }
+        });
     }
 }

@@ -27,4 +27,10 @@ public class UsuarioDBHelper extends SQLiteOpenHelper {
         public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             onUpgrade(db, oldVersion, newVersion);
         }
+        public void limpiarDB(SQLiteDatabase db)
+        {
+            db.execSQL(UsuarioContract.SQL_DELETE_USUARIO);
+            onCreate(db);
+
+        }
 }
